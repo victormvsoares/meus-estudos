@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int horas;
+    float valhoras;
+    int perdesconto;
+    printf("\nquantidades de horas trabalhadas = ");
+    scanf("%d",&horas);
+    printf("\nvalor de horas trabalhadas = ");
+    scanf("%f",&valhoras);
+    printf("\npercentual de desconto = ");
+    scanf("%d",&perdesconto);
+    float salariobruto = horas * valhoras;
+    printf("\no salario bruto e de = %f", salariobruto);
+    float salarioliquido = salariobruto - (salariobruto * ((float)perdesconto/(float)100));
+    printf("\nmenos %d porsento de desconto",perdesconto);
+    printf("\n o salario liquido e de = %f",salarioliquido);
+    return 0;
+}
