@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    float retaum, retadois, retatres, area;
+
+    printf("Qual o comprimento da primeira reta : ");
+    scanf("%f",&retaum);
+
+    printf("Qual o comprimento da segunda reta : ");
+    scanf("%f",&retadois);
+
+    printf("Qual o comprimento da tercera reta : ");
+    scanf("%f",&retatres);
+
+    area = (retaum * retadois) / 2;
+
+    if(retaum < retadois + retatres){
+
+        if(retadois < retaum + retatres){
+
+            if(retatres < retaum + retadois){
+
+                printf("as retas formao um triangulo e sua area e %0.2f",area);
+            }
+
+            else{
+
+                printf("as retas nao formao um triangulo");
+
+            }
+        }
+
+        else{
+
+            printf("as retas nao formao um triangulo");
+        
+        }
+    
+    }
+
+    else{
+
+         printf("as retas nao formao um triangulo");
+
+        }
+
+    return 0;
+}   
