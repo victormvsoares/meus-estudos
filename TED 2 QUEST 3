@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    char alfNum = "d";
+    int num = alfNum;
+
+    printf("%d",num);
+
+    return 0;
+}   
