@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int km;
+    float milha;
+    printf("digite um quilometragem - ");
+    scanf("%d",&km);
+    milha = km / 1.609;
+    printf("%d km equivalem a %f milhas",km ,milha);
+    return 0;
+}
