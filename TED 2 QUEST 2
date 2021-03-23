@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    unsigned long int A = 100000000 ;
+    unsigned long int B = 200000000 ;
+    unsigned long int C;
+
+    printf("A = %lu B = %lu\n",A,B);
+
+    C = A;
+    A = B;
+    B = C;
+
+    printf("A = %lu B = %lu",A,B);
+
+    return 0;
+}   
