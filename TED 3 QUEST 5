@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    float valor;
+    float valtotal;
+    int estado;
+
+    printf("Digite o valor do produto : ");
+    scanf("%f",&valor);
+
+    fflush(stdin);
+
+    printf("Digite o estado de destino do produto (MG=1/SP=2/RJ=3/MS=4/PB=5) : ");
+    scanf("%i",&estado);
+
+
+    switch(estado){
+
+        case 1:
+            
+            valtotal =  valor * 7/100;
+            printf("%0.2f",valtotal);
+            break;
+        
+        case 2:
+            
+            valtotal =  valor * 12/100;
+            printf("%0.2f",valtotal);
+            break;
+        
+        case 3:
+            
+            valtotal =  valor * 15/100;
+            printf("%0.2f",valtotal);
+            break;
+        
+        case 4:
+            
+            valtotal = valor * 8/100;
+            printf("%0.2f",valtotal);
+            break;
+        
+        case 5:
+            
+            valtotal =  valor * 20/100;
+            printf("%0.2f",valtotal);
+            break;
+
+        default:
+
+            printf("--ERRO--O valor nao e valido");
+            break;
+    }
+
+    return 0;
+}   
