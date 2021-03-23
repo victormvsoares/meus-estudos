@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+
+    int numero;
+    int potenciacao;
+    int raiz;
+
+    printf("Digite um numero : ");
+    scanf("%i",&numero);
+
+    if(numero > 0){
+
+        potenciacao = pow(numero,2);
+        raiz = sqrt(numero);
+
+        printf("a potenciacao do seu numero e = %i\n",potenciacao);
+
+        printf("a raiz do eu numero e = %i ",raiz);
+
+    }
+
+    else{
+
+        printf("o seu numero e negativo");
+    }
+
+    return 0;
+}   
