@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    double grausF = 100.52;
+    double grausC = ((grausF - 32) * 5) / 9;
+
+    printf("%.1lf graus Fahrenheit equivalem %.1lf graus Celsius ",grausF,grausC);
+
+    return 0;
+}   
