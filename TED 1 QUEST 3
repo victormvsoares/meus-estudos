@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int tempodaviag;
+    int velmed;
+    int disperco;
+    int litrogast;
+    printf("digite o tempo da viagem h- ");
+    scanf("%d",&tempodaviag);
+    printf("digite a velocidade media km/h - ");
+    scanf("%d",&velmed);
+    disperco = tempodaviag * velmed;
+    litrogast = disperco / 12;
+    printf("um carro a %d km/h",velmed);
+    printf("\nviajou por %d h",tempodaviag);
+    printf("\nem um trageto de %d km",disperco);
+    printf("\ne gastou %d litros de cosbustivel na viajem",litrogast);
+    return 0;
+}
