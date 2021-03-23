@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    unsigned int num = 5;
+    unsigned int expCub = (num * num) * num;
+
+    printf("O expoente cubico de %u e %u",num,expCub);
+    
+    return 0;
+}   
