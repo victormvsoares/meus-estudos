@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    int c;
+    
+    for (c = 1; c < 11; c++){
+
+       printf("contando = %i\n",c);
+
+    }
+    
+    return 0;
+}
