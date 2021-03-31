@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    float alturaChico = 1.50;
+    float crecimentoChico = 0.02;
+    float alturaZe = 1.10;
+    float crecumentoZe = 0.03;
+    int anos = 0;
+
+    while (alturaChico > alturaZe){
+
+        alturaZe = alturaZe + crecumentoZe;
+        alturaChico = alturaChico + crecimentoChico;
+        anos++;
+
+    }
+    
+    printf("em %i anos Chico medira %0.2f e Ze medira %0.2f",anos,alturaChico,alturaZe);
+    
+    return 0;
+}
