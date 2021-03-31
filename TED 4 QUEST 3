@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    int cond = 1;
+    int numPos = 0;
+    int numNeg = 0;
+
+    while (cond != 0){
+
+        numPos++;
+        numNeg--;
+        printf("numero positivo = %i\nnumero negativo = %i\n",numPos,numNeg);
+        printf("digite (0) para parar e (1) um para continuar = ");
+        scanf("%i",&cond);
+
+    }
+    
+    printf("numero positivo = %i\nnumero negativo = %i\n",numPos,numNeg);
+
+    return 0;
+}
