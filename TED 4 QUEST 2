@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    int multiplicado;
+    int multiplicador;
+    int produto;
+
+    printf("digite um numero inteiro = ");
+    scanf("%i",&multiplicado);
+
+        for (multiplicador = 1; multiplicador < 11; multiplicador++){
+
+            produto = multiplicado * multiplicador;
+
+            printf("%i x %i = %i\n",multiplicado,multiplicador,produto);
+
+        }
+
+    return 0;
+}
