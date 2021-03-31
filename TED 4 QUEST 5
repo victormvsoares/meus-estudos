@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    int coluna;
+    int linhas;
+    int repetir;
+    int repertirLinhas = 1;
+
+    printf("digite um numero de linhas = ");
+    scanf("%i",&repetir);
+
+    for ( coluna = 0; coluna < repetir ; coluna++){
+
+        for ( linhas = 0; linhas < repertirLinhas; linhas++){
+
+            printf("*");
+
+        }
+        repertirLinhas++;
+        printf("\n");
+
+    }
+    
+    
+    return 0;
+}
