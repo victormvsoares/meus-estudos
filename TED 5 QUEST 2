@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+
+    int max;
+    int min;
+
+    printf("Digite um valor Mínimo");
+    scanf("%i",&max);
+
+    printf("Digite um valor Maximo ");
+    scanf("%i",&min);
+
+    while(min < max){
+    if(max%5 == 0){
+        printf("%i\n",max);
+        max--;
+    }else{
+        max--;
+    }
+
+    }
+    
+    return 0;
+}
