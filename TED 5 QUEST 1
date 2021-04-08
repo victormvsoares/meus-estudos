@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+
+    int rep = 3;
+    int num;
+    int num2;
+
+    do
+    {
+    
+    printf("digite um numero ");
+    scanf("%i",&num);
+
+    printf("digite outro numero ");
+    scanf("%i",&num2);
+
+    printf("o resuntado da subitracao de %i com %i = %i\n",num,num2,(num-num2));
+        
+    } while (rep);
+    
+
+    return 0;
+}
