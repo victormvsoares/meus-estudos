@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+
+    char Resposta = 's';
+    int Tabuada;
+
+    printf("TABUADAS");
+
+    while (Resposta != 'n'){
+
+        printf("deseja ver umatabuada [s/n]\nResposta: ");
+        scanf("%c",&Resposta);
+
+        if (Resposta == 's'){
+
+            printf("Tabuada de: ");
+            scanf("%i",&Tabuada);
+            for (int i = 1; i <= 10; i++){
+
+                printf("%i x %i = %i\n",Tabuada,i,Tabuada*i);
+            }
+
+        }
+
+    }
+
+    return 0;
+}
