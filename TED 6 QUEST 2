@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    int valor;
+    float h;
+
+    printf("digite o valor ");
+    scanf("%i",&valor);
+
+    for (int i = 1; i < valor + 1; i++){
+
+        h += (float)1/(float)i;
+    }
+
+    printf("%f\n",h);
+
+    return 0;
+}
