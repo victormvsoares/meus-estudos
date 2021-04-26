@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    int primeirovalor;
+    int segundovalor;
+
+    printf("digite o primeiro valor ");
+    scanf("%i",&primeirovalor);
+
+    printf("digite o segundo valor ");
+    scanf("%i",&segundovalor);
+
+    printf("o resuntado da soma de %i com %i e igual a %i",primeirovalor,segundovalor,primeirovalor + segundovalor);
+
+    return 0;
+}
