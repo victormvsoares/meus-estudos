@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int is_power(int a, int b){
+
+    int resto;
+    int restodoresto;
+
+    resto = a % b;
+
+    if(resto == 0){
+        
+        restodoresto = (a/b) % b;
+
+        if(restodoresto == 0){
+
+            return 1;
+        }
+        return 0;
+    }
+    return 0;
+}
+
+int main(){
+
+    int a;
+    int b;
+
+    printf("\n\t-Digite um numero A:");
+    scanf("%i",&a);
+
+    printf("\n\t-Digite um numero B:");
+    scanf("%i",&b);
+
+    int pow = is_power(a,b);
+
+    if(pow == 1){
+
+        printf("A e potencia de B");
+
+    }
+
+    else{
+
+        printf("A nao e potencia de B");
+
+    }
+
+    return 0;
+}
