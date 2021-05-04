@@ -1,0 +1,96 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int soma(int a,int b){
+
+    int produto;
+    produto = (a + b);
+
+    return produto;
+}
+
+int subtra(int a,int b){
+
+    int produto;
+    produto = (a - b);
+
+    return produto;
+}
+
+int multiplica(int a,int b){
+
+    int produto;
+    produto = (a * b);
+
+    return produto;
+}
+
+int divid(int a,int b){
+
+    int produto;
+    produto = (a / b);
+
+    return produto;
+}
+
+int main(){
+
+    int a;
+    int b;
+    int opera;
+
+    printf("\n\t\t-=-CAUCULADORA-=-");
+    
+    printf("\n\t-Digite um numero :");
+    scanf("%i",&a);
+
+    fflush(stdin);
+
+    printf("\n\t-Operadores-");
+    printf("\n\tSoma [1]");
+    printf("\n\tSubtracao [2]");
+    printf("\n\tMultiplicacao [3]");
+    printf("\n\tDivisao [4]");
+    printf("\n\t-Escolha um Operador :");
+    scanf("%i",&opera);
+
+    fflush(stdin);
+
+    printf("\n\t-Digite um segundo numero :");
+    scanf("%i",&b);
+
+    fflush(stdin);
+
+    if(opera == 1){
+
+        int sam = soma(a,b);
+        printf("A soma de %i com %i e igual a %i", a, b, sam);
+
+    }
+
+    else if(opera == 2){
+
+        int sub = subtra( a, b);
+        printf("A subtracao de %i com %i e igual a %i", a, b, sub);
+
+
+    }
+
+    else if(opera == 3){
+
+        int mult = multiplica( a, b);
+        printf("A multiplicacao de %i com %i e igual a %i", a, b, mult);
+
+
+    }
+
+    else if(opera == 4){
+
+        int div = divid( a, b);
+        printf("A divisao de %i com %i e igual a %i", a, b, div);
+
+
+    }
+
+    return 0;
+}
