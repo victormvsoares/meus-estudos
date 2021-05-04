@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int gcd(int a, int b){
+
+    int resto;
+
+    while(b != 0){
+
+        resto = a % b;
+        a = b;
+        b = resto;
+
+    }
+    return a;
+}
+
+int main(){
+
+    int a;
+    int b;
+
+    printf("\n\t-Digite um numero A:");
+    scanf("%i",&a);
+
+    printf("\n\t-Digite um numero B:");
+    scanf("%i",&b);
+
+    int mdc = gcd(a , b);
+
+    printf("O MDC de %i e %i = %i",a,b,mdc);
+
+    return 0;
+}
