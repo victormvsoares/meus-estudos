@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+
+    setlocale(LC_ALL,"Portuguese");
+
+    int a,b,r;
+
+    printf("\t\tMULTIPLICAÇÃO");
+    
+    printf("\n\tDigite um numero = ");
+    scanf("%i",&a);
+
+    printf("\n\tDigite outro numero = ");
+    scanf("%i",&b);
+
+    r = mult(a,b);
+
+    printf("\n\t%i X %i = %i",a,b,r);
+
+    return 0;
+}
+
+int mult(int a,int b ){
+
+    if(b == 0){
+
+        return 0;
+
+    }
+    else{
+
+        return a + mult(a,b-1);
+
+    }
+
+} 
