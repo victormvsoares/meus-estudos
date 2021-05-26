@@ -1,0 +1,36 @@
+int main(){
+
+    struct retangulo {
+	    float x;
+	    float y;
+    }pontoPs, pontoPi;
+	
+    struct retangulo ponto;
+    
+	printf("\nInforme os valores de x e y para o ponto superior direito >>> \n");
+	printf("x: ");
+	scanf("%f", &pontoPs.x);
+	printf("y: ");
+	scanf("%f", &pontoPs.y);
+	
+	printf("\nInforme os valores de x e y para o ponto superior direito >>> \n");
+	printf("x: ");
+	scanf("%f", &pontoPi.x);
+	printf("y: ");
+	scanf("%f", &pontoPi.y);
+
+    printf("\nInforme os valores de x e y para o ponto >>> \n");
+    printf("x: ");
+	scanf("%f", &ponto.x);
+	printf("y: ");
+	scanf("%f", &ponto.y);
+
+    if ((ponto.x >= pontoPs.x && ponto.x <= pontoPi.x) && (ponto.y <= pontoPs.y && ponto.y >= pontoPi.y)){ 
+		
+        printf("\nO ponto está dentro do retangulo!\n");
+    }else{ 
+        printf("\nO ponto nao esta dentro do retangulo!\n");
+    }
+
+    return 0;
+}
