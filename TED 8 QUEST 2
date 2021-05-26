@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    struct retangulo {
+	    float x;
+	    float y;
+    }pontoPs, pontoPi;
+	
+    float base, altura;
+	float area, perimetro, diagonal;
+	
+	printf("\nInforme os valores de x e y para o ponto superior direito >>> \n");
+	printf("x: ");
+	scanf("%f", &pontoPs.x);
+	printf("y: ");
+	scanf("%f", &pontoPs.y);
+	
+	printf("\nInforme os valores de x e y para o ponto superior direito >>> \n");
+	printf("x: ");
+	scanf("%f", &pontoPi.x);
+	printf("y: ");
+	scanf("%f", &pontoPi.y);
+	
+	base = pontoPi.x - pontoPs.x;
+	altura = pontoPs.y - pontoPi.y;
+	
+	area = base * altura;
+	diagonal = sqrt(pow(base, 2) + pow(altura, 2));
+    perimetro = 2 * (base + altura);
+	
+	printf("\nArea: %.2f", area);
+    printf("\nDiagonal: %.2f", diagonal);
+	printf("\nPerimetro: %.2f", perimetro);
+
+    return 0;
+}
